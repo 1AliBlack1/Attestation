@@ -1,1 +1,13 @@
 ﻿//Напишите программу которая принимает в себя массив и выдает элементы в которых до 3 символов
+Console.Write("Введите количество элементов массива: ");
+int m = Convert.ToInt32(Console.ReadLine());
+string [] stringArray = new string [m];
+void array(string [] stringArray)
+{
+  for (int i = 0;i<stringArray.Length;i++)
+  {
+     Console.WriteLine($"Введите {i+1} элемент массива");
+     stringArray[i] = Console.ReadLine();
+  }
+}
+
